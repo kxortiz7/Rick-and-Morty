@@ -50,9 +50,10 @@ justify-content: center;
 
 .input-value{ 
     margin: 1.5%; 
-    margin-right: 45%;  
+    margin-right: 0%;  
     border: 0;
     outline: none;  
+    width:350px;
     
 }
 .content-overall{

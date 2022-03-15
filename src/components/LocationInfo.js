@@ -11,9 +11,9 @@ import ResidentsList from './ResidentsList';
 
 const LocationInfo = () => {
     const [ramInfo, setramInfo] = useState({})
-
-    const random = Math.floor((Math.random()*126) +1)
+    
     useEffect(()=>{
+        const random = Math.floor((Math.random()*126) +1)
         axios.get(`https://rickandmortyapi.com/api/location/${random}`)
         .then(res => setramInfo(res.data))
     },[])
